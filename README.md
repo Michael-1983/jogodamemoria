@@ -1,0 +1,2 @@
+# jogodamemoria
+Jogo cuja finalidade é estimular a memória do jogador. O jogo terá duas opções de jogabilidade: Pré-definido e Personalizado. Pré-definido: Imagens do dia a dia previamente configuradas pelo sistema com cores e nomes que ajudem a etimular a memória de quem joga! Personalizada: O jogador poderá colocar imagens de seu computador no jogo, podendo assim "criar" um jogo com fotos de familiares e os respectivos nomes, afim de estimular a memória da pessoa com Alzheimer.
