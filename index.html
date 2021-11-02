@@ -11,9 +11,12 @@
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./assets/scripts/index.js"/>
+    
     <title>Jogo da Memoria</title>
   </head>
   <body>
+    
     <div class="title">
       <p>Jogo da Memória</p>
     </div>
@@ -53,6 +56,7 @@
     <div class="tipo">
       <div class="original">
         <button
+          id="originalStarButton"
           type="button"
           class="original"
           data-toggle="tooltip"
@@ -75,5 +79,65 @@
         </button>
       </div>
     </div>
+    <div class="containerTab">
+      <div id="memoria">
+        <div id="imagens">
+          <div class="row">
+            <div class="col-3">
+              <img id="i0" />
+            </div>
+            <div class="col-3">
+              <img id="i1" />
+            </div>
+            <div class="col-3">
+              <img id="i3" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+                <img id="i4" />
+              </div>
+              <div class="col-3">
+                <img id="i5" />
+              </div>
+              <div class="col-3">
+                <img id="i6" />
+              </div>
+              <div class="col-3">
+                <img id="i7" />
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+                <img id="i8" />
+              </div>
+              <div class="col-3">
+                <img id="i9" />
+              </div>
+              <div class="col-3">
+                <img id="i10" />
+              </div>
+              <div class="col-3">
+                <img id="i11" />
+              </div>
+        </div>
+        <div class="row">
+        <div class="col-3">
+            <img id="i12" />
+          </div>
+          <div class="col-3">
+            <img id="i13" />
+          </div>
+          <div class="col-3">
+            <img id="i14" />
+          </div>
+          <div class="col-3">
+            <img id="i15" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/scripts/eventos.js"></script>
+    <script src="./assets/scripts/index.js"></script>
   </body>
 </html>
