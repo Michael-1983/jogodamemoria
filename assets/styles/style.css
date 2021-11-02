@@ -1,0 +1,66 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: repeating-radial-gradient(white, rgb(37, 104, 230));
+}
+.title {
+  color: #fa672d;
+  font-size: 100px;
+  text-align: center;
+  font-family: Blippo, fantasy;
+}
+.subTitle {
+  color: #fa672d;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.inputText {
+  font-size: 20px;
+  margin-top: 6%;
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+  padding: 10 px;
+}
+.nome {
+  font-size: 20px;
+  width: 60%;
+}
+.idade {
+  font-size: 20px;
+  width: 20%;
+}
+.tipo {
+  margin-top: 3%;
+  text-align: center;
+  color: #fa672d;
+  font-size: 35px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.jogabilidade {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(250, 103, 45);
+  font-size: 40px;
+}
+.original {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.personalizada {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
