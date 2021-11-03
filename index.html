@@ -16,13 +16,21 @@
     <title>Jogo da Memoria</title>
   </head>
   <body>
-    <div class="title">
-      <p>Jogo da Memória</p>
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <div class="title">
+            <p>Jogo da Memória</p>
+          </div>
+        </div>
+        <div class="back">
+          <div class="subTitle">
+            <p>Desperte seu cérebro</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="subTitle">
-      <p>Desperte seu cérebro</p>
-    </div>
     <div id="caixinhaText">
       <div class="container2">
         <div class="text-center">
@@ -83,58 +91,47 @@
         <div id="imagens" class="containerCards">
           <div>
             <div>
-              <img id="i0" />
+              <img data-valor="0" id="i0" />
             </div>
             <div>
-              <img id="i1" />
+              <img data-valor="1" id="i1" />
             </div>
             <div>
-              <img id="i2" />
+              <img data-valor="2" id="i2" />
             </div>
             <div>
-              <img id="i3" />
-            </div>
-          </div>
-          <div>
-            <div>
-              <img id="i4" />
-            </div>
-            <div>
-              <img id="i5" />
-            </div>
-            <div>
-              <img id="i6" />
-            </div>
-            <div>
-              <img id="i7" />
+              <img data-valor="3" id="i3" />
             </div>
           </div>
           <div>
             <div>
-              <img id="i8" />
+              <img data-valor="4" id="i4" />
             </div>
             <div>
-              <img id="i9" />
+              <img data-valor="5" id="i5" />
             </div>
             <div>
-              <img id="i10" />
+              <img data-valor="6" id="i6" />
             </div>
             <div>
-              <img id="i11" />
+              <img data-valor="7" id="i7" />
             </div>
           </div>
           <div>
             <div>
-              <img id="i12" />
+              <img data-valor="8" id="i8" />
             </div>
             <div>
-              <img id="i13" />
+              <img data-valor="9" id="i9" />
             </div>
             <div>
-              <img id="i14" />
+              <img data-valor="10" id="i10" />
             </div>
             <div>
-              <img id="i15" />
+              <img data-valor="11" id="i11" />
+            </div>
+          </div>
+          <div>            
             </div>
           </div>
         </div>

@@ -74,3 +74,11 @@ body {
 .containerCards img {
   margin: 15px;
 }
+.flip-container:hover .flipper,
+.flip-container.hover .flipper,
+.flip-container.flip .flipper {
+  transform: rotateY(180deg);
+  transition: 0, 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
