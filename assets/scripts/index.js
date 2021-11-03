@@ -15,17 +15,3 @@ const onload = () => {
 function ocultar() {
   document.getElementById("caixinhaText").style.display = "none";
 }
-
-const play = () => {
-  for (let i = 0; i < cartas.length; i++) {
-    let p = Math.trunc(Math.random() * cartas.length);
-    let aux = cartas[p];
-    cartas[p] = cartas[i];
-    cartas[i] = aux;
-  }
-  let elemImages = document.querySelectorAll("#memoria img");
-  elemImages.forEach((img, i) => {
-    img.onclick = trataCliqueImagem;
-    img.style.opacity = 1;
-  });
-};
