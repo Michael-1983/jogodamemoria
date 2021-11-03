@@ -9,9 +9,9 @@ startButton.addEventListener("click", () => {
 
 /*embaralha (tráz o índice duplicado e randomizado"let aux") e distribui as cartas*/
 const play = () => {
-  for (let i = 0; i < cartas.length; i++) {
-    let p = Math.trunc(Math.random() * cartas.length);
-    let aux = cartas[p];
+  for (let i = 0; i < imagens.length; i++) {
+    let p = Math.trunc(Math.random() * imagens.length);
+    let aux = imagens[p];
     /*cartas[p] = cartas[i];
     cartas[i] = aux;*/
   }

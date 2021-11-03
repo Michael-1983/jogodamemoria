@@ -70,10 +70,15 @@ body {
   padding: 14%;
   margin-top: -14%;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .containerCards img {
   margin: 15px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
 }
+
 .flip-container:hover .flipper,
 .flip-container.hover .flipper,
 .flip-container.flip .flipper {
