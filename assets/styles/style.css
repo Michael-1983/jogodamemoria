@@ -64,3 +64,10 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.containerCards {
+  display: flex;
+  flex-direction: row;
+  padding: 14%;
+  margin-top: -14%;
+  justify-content: space-between;
+}
