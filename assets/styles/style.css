@@ -7,6 +7,8 @@ body {
   font-size: 100px;
   text-align: center;
   font-family: Blippo, fantasy;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  text-shadow: 2px 2px white;
 }
 .subTitle {
   color: #fa672d;
@@ -14,6 +16,7 @@ body {
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 .inputText {
@@ -24,13 +27,30 @@ body {
   width: 38%;
   padding: 10 px;
 }
+
 .nome {
   font-size: 20px;
   width: 60%;
+  border-radius: 35px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(to right, orangered, orange);
+  cursor: pointer;
+  margin: 2px;
 }
 .idade {
   font-size: 20px;
   width: 20%;
+  border-radius: 35px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(to right, orangered, orange);
+  cursor: pointer;
+  margin: 2px;
 }
 .tipo {
   margin-top: 3%;
@@ -48,21 +68,46 @@ body {
 
 .jogabilidade {
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: rgb(250, 103, 45);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  text-shadow: 2px 2px rgb(247, 111, 21);
+  color: rgb(252, 148, 13);
+  text-shadow: 0.1em 0.1em 0.2em black;
   font-size: 40px;
+  letter-spacing: 5px;
 }
 .original {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  color: rgb(252, 148, 13);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  letter-spacing: 4px;
+  font-family: fantasy;
+  font-size: 50px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  border: none;
+  cursor: pointer;
 }
+
 .personalizada {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  color: rgb(252, 148, 13);
+  text-shadow: 0.1em 0.1em 0.2em black;
+  letter-spacing: 4px;
+  font-family: fantasy;
+  font-size: 50px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  border: none;
+  cursor: pointer;
 }
 .containerCards {
   display: flex;
@@ -79,11 +124,8 @@ body {
   border-radius: 20%;
 }
 
-.flip-container:hover .flipper,
-.flip-container.hover .flipper,
-.flip-container.flip .flipper {
-  transform: rotateY(180deg);
-  transition: 0, 1s;
-  transform-style: preserve-3d;
-  position: relative;
+.card:hover {
+  box-shadow: 0 0 1px rgb(36, 15, 224);
+  border-style: double blue;
+  border-radius: 20%;
 }
