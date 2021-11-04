@@ -37,20 +37,25 @@ const trataCliqueImagem = (e) => {
   if (cont === 0) {
     const p = +e.target.getAttribute("data-valor");
     e.target.src = imagens[p];
-    srcImagem1 = e.target.src;
+    srcImagem1 = e.target;
     cont++;
-    console.log(srcImagem1, cont, e.target.src);
+    return;
   } else if (cont === 1) {
-    if (srcImagem1 === e.target.src) {
-      cont = 0;
+    if (srcImagem1.src === e.target.src) {
       const p = +e.target.getAttribute("data-valor");
       e.target.src = imagens[p];
-      console.log(e.target.src, fundo, p, srcImagem1, cont);
-    } else if (srcImagem1 !== e.target.src) {
-      cont = 0;
+      srcImagem1.onclick = null;
+      e.target.onclick = null;
+      return;
+    } else if (srcImagem1.src !== e.target.src) {
       const p = +e.target.getAttribute("data-valor");
-      e.target.src = fundo;
-      console.log(e.target.src, fundo, p, srcImagem1, cont);
+      e.target.src = imagens[p];
+      setTimeout(() => {
+        cont = 0;
+        e.target.src = fundo;
+        srcImagem1.src = fundo;
+      }, 1000);
+      return;
     }
   }
 };
