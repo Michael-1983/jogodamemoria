@@ -132,8 +132,9 @@ body {
 
 .rounded2 {
   margin-top: -16%;
-  margin-left: 71%;
+  margin-left: 75%;
   position: absolute;
+  width: 290px;
 }
 .ocultar {
   display: none;
