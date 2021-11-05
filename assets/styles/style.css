@@ -129,3 +129,9 @@ body {
   border-style: double blue;
   border-radius: 20%;
 }
+
+.rounded2 {
+  margin-top: -16%;
+  margin-left: 38%;
+  position: absolute;
+}
