@@ -5,4 +5,6 @@ Jogo cuja finalidade é estimular a memória do jogador. O jogo terá duas opç�
 Esse jogo foi desenvolvido em 1 semana, usando Javascript, HTML e CSS usando o DOM.
 Primeiro criei uma estrutura em HTML e CSS para o Layout da página de jogo. Usei o Javascript para fazer a lógica de jogo.
 
+Link para o deploy: https://michael-1983.github.io/jogodamemoria/
+
 Slides de apresentação: https://docs.google.com/presentation/d/18vTu_3jh8OwmTAEqNrIr2s2ZE_OJiIoAAYMRJAXegyg/edit?usp=sharing

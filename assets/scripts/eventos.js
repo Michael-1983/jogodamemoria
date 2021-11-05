@@ -3,6 +3,7 @@ startButton.addEventListener("click", () => {
   play();
   onload();
   ocultar();
+  reexibir();
 
   document.querySelector("#originalStarButton").onclick = play;
 });

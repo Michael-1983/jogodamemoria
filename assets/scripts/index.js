@@ -42,3 +42,6 @@ const onload = () => {
 function ocultar() {
   document.getElementById("caixinhaText").style.display = "none";
 }
+function reexibir() {
+  document.getElementById("cerebro-pensando").classList.remove("ocultar");
+}
