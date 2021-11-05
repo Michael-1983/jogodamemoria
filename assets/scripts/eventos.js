@@ -1,5 +1,3 @@
-/*evento click*/
-
 let startButton = document.getElementById("originalStarButton");
 startButton.addEventListener("click", () => {
   play();
@@ -29,10 +27,13 @@ let fundo =
 /*pega o atributo "data-valor"*/
 let cont = 0;
 let srcImagem1 = "";
+let srcImagem2 = "";
 const trataCliqueImagem = (e) => {
-  console.log(e);
   e.stopPropagation();
   e.preventDefault();
+
+  console.log("ATUAL", e.target.src);
+  console.log("ANTERIOR", srcImagem1.src);
 
   if (cont === 0) {
     const p = +e.target.getAttribute("data-valor");
@@ -41,21 +42,26 @@ const trataCliqueImagem = (e) => {
     cont++;
     return;
   } else if (cont === 1) {
-    if (srcImagem1.src === e.target.src) {
-      const p = +e.target.getAttribute("data-valor");
-      e.target.src = imagens[p];
-      srcImagem1.onclick = null;
-      e.target.onclick = null;
-      return;
-    } else if (srcImagem1.src !== e.target.src) {
-      const p = +e.target.getAttribute("data-valor");
-      e.target.src = imagens[p];
-      setTimeout(() => {
+    const p = +e.target.getAttribute("data-valor");
+    e.target.src = imagens[p];
+    srcImagem2 = e.target;
+    cont++;
+
+    setTimeout(() => {
+      if (srcImagem1.src === srcImagem2.src) {
+        console.log("acerto");
+        srcImagem1.onclick = null;
+        srcImagem2.onclick = null;
         cont = 0;
-        e.target.src = fundo;
+        srcImagem1 = "";
+        srcImagem2 = "";
+        return;
+      } else if (srcImagem1.src !== srcImagem2.src) {
+        cont = 0;
         srcImagem1.src = fundo;
-      }, 1000);
-      return;
-    }
+        srcImagem2.src = fundo;
+        return;
+      }
+    }, 1000);
   }
 };

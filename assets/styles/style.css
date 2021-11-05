@@ -112,15 +112,15 @@ body {
 .containerCards {
   display: flex;
   flex-direction: row;
-  padding: 14%;
-  margin-top: -14%;
+  padding: -10%;
+  margin-top: -1%;
   justify-content: center;
   flex-wrap: wrap;
 }
 .containerCards img {
   margin: 15px;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 20%;
 }
 
