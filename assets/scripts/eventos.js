@@ -36,9 +36,10 @@ const trataCliqueImagem = (e) => {
   console.log("ANTERIOR", srcImagem1.src);
 
   if (cont === 0) {
-    const p = +e.target.getAttribute("data-valor");
+    const p = e.target.getAttribute("data-valor");
     e.target.src = imagens[p];
     srcImagem1 = e.target;
+    console.log(e.target);
     cont++;
     return;
   } else if (cont === 1) {
