@@ -30,18 +30,15 @@ let fundo =
 let cont = 0;
 let srcImagem1 = "";
 const trataCliqueImagem = (e) => {
-  console.log(e);
-  e.stopPropagation();
-  e.preventDefault();
-
   if (cont === 0) {
-    const p = +e.target.getAttribute("data-valor");
+    const p = e.target.getAttribute("data-valor");
     e.target.src = imagens[p];
     srcImagem1 = e.target;
+    console.log(e.target);
     cont++;
     return;
   } else if (cont === 1) {
-    if (srcImagem1.src === e.target.src) {
+    if (srcImagem1.src === e.target.src && srcImagem1.id !== e.target.id) {
       const p = +e.target.getAttribute("data-valor");
       e.target.src = imagens[p];
       srcImagem1.onclick = null;
